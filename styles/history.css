@@ -22,5 +22,9 @@ section {
     border:solid burlywood 2px;
     border-radius: 5px;
     padding:5px;
+}
 
+.tim {
+    /* flex-grow:2; */
+    background-color: lightblue;
 }
