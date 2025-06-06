@@ -1,8 +1,21 @@
-body{
-    margin-left: 1em;
-}
+ .poem{
+    box-sizing: border-box;
+    padding-right: 5em;
+    padding-left: 4em;
+ }
 
-img{
-    float: none;
-    padding-right: 1em;
-}
+ .image{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 2em;
+ }
+
+ .image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
+ footer{
+    justify-items: center;
+ }

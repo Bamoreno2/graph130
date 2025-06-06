@@ -6,13 +6,20 @@
     <title>Grid Based Layout</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
 <link rel="stylesheet" href="../styles/grid.css">
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous"> -->
 </head>
    
 <body>
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+        });
+        </script>
     <article class="poem">
         <h1>Grid Based Layout</h1>
-     <section class="pure-u-1-3">
+     <section class="pure-u-1-4">
         <h2>Poems</h2>
         <h3>Losing <div>Bokhu/ Translated by Jack Saebyok Jung</div></h3>
         <p>Even if no one can feel you anymore, you must
@@ -27,7 +34,7 @@
     to give yourself.</p>
      </section>  
 
-     <section class="pure-u-1-3">
+     <section class="pure-u-1-4">
         <h3>Of the Art of Cobweb Painting <div>Alba Cid/ Translated by Jacob Roger</div></h3>
         <p>only a hundred of these postcard-size canvases remain.
     a miracle or a lesson. such is memory.
@@ -40,7 +47,7 @@
     against an opalescent background.</p>
      </section>
        
-     <section class="pure-u-1-3">
+     <section class="pure-u-1-4">
         <h3>Migrant Life<div>Paloma Chen/ Translated by Julia Conner</div></h3>
         <p>we are wasting our life in a land
 
@@ -56,21 +63,25 @@
     open life, closed life
     migrant life</p>
      </section>
-    <div>
-        <section class="pure-u-1-4">
-         <img src="../images/JPEG/picture1.jpg" alt="lion">
-        </section>
-        <section class="pure-u-1-4">
-         <img src="../images/JPEG/picture2.jpg" alt="bridge">
-        </section>
-        <section class="pure-u-1-4">
-         <img src="../images/JPEG/picture3.jpg" alt="attic">
-        </section>
-        <section class="pure-u-1-4">
-         <img src="../images/JPEG/picture4.jpg" alt="mountain">
-        </section>
     </article>
-</div>
 
+    <div class="image">
+        
+        <section class="pure-u-1-5">
+         <img class="item1" src="../images/JPEG/picture1.jpg" alt="lion" width="300px">
+        </section>
+        <section class="pure-u-1-5">
+         <img class="item2" src="../images/JPEG/picture2.jpg" alt="bridge" width="300px">
+        </section>
+        <section class="pure-u-1-5">
+         <img class="item3" src="../images/JPEG/picture3.jpg" alt="attic" width="300">
+        </section>
+        <section class="pure-u-1-5">
+         <img class="item4" src="../images/JPEG/picture4.jpg" alt="mountain" width="300">
+        </section>
+      </div>
+<footer>
+    <p>EvCC|Spring 2025|Bianca Moreno</p>
+</footer>
 </body>
 </html>
